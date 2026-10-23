@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long Backgammon — Support & Privacy Policy</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    :root {
+      --bg-color: #0f1115;
+      --card-bg: rgba(26, 30, 39, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #d4a373;
+      --accent-hover: #faedcd;
+      --accent-glow: rgba(212, 163, 115, 0.25);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: 
+        radial-gradient(ellipse at 50% 0%, rgba(212, 163, 115, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 90%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    }
+
+    header {
+      width: 100%;
+      max-width: 800px;
+      padding: 48px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .app-icon {
+      width: 110px;
+      height: 110px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-hover);
+      background: rgba(212, 163, 115, 0.1);
+      border-color: var(--accent);
+    }
+
+    main {
+      width: 100%;
+      max-width: 800px;
+      padding: 12px 24px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p {
+      color: #d1d5db;
+      margin-bottom: 16px;
+    }
+
+    .support-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #d4a373 0%, #b37d46 100%);
+      color: #1a1e27;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(212, 163, 115, 0.3);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-top: 6px;
+    }
+
+    .support-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 163, 115, 0.45);
+      color: #0b0d11;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 16px 0;
+    }
+
+    .faq-item:first-of-type {
+      padding-top: 0;
+    }
+
+    .faq-item:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .faq-answer {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 24px;
+      color: #d1d5db;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 24px;
+      color: #6b7280;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 32px 16px 16px;
+      }
+      .card {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="app-icon.png" alt="Long Backgammon App Icon" class="app-icon">
+    <h1>Long Backgammon</h1>
+    <p class="subtitle">Official Support & Privacy Policy for macOS</p>
+    <nav>
+      <a href="#support">Support & Contact</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Support Section -->
+    <section id="support" class="card">
+      <h2>📬 Customer Support</h2>
+      <p>
+        Thank you for playing <strong>Long Backgammon</strong>! If you have any questions, encounter an unexpected issue, or have a suggestion for improving the game, our support is here to help.
+      </p>
+      <p>
+        Please reach out directly via email with details about your issue, your macOS version, and any screenshots if applicable:
+      </p>
+      <a href="mailto:longbackgammon@icloud.com?subject=Long%20Backgammon%20Support" class="support-btn">
+        ✉️ Contact Support (longbackgammon@icloud.com)
+      </a>
+      <p style="margin-top: 16px; font-size: 0.88rem; color: var(--text-muted);">
+        ⏱ Typical response time: within 24 to 48 hours.
+      </p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="card">
+      <h2>❓ Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">What are the rules of Long Backgammon?</div>
+        <div class="faq-answer">
+          Long Backgammon (Nardi) is played with 15 checkers on a 24-point board. Unlike short backgammon, there is no hitting (checkers cannot be knocked off). Only one checker can be taken from the "head" (starting point) per turn, except for certain initial doubles (3:3, 4:4, 6:6). Checkers move counter-clockwise around the board toward your home quarter to be borne off.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How can I switch themes or adjust game speed?</div>
+        <div class="faq-answer">
+          Click the Settings button (or press Command+,) to open the preferences window. You can switch between Classic Wood and Elegant Marble boards, select checker movement trajectories (straight or arc), and choose between fast and relaxed animation speeds.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I play with another player on the same Mac?</div>
+        <div class="faq-answer">
+          Yes! Select the <strong>Pass & Play</strong> (Two Players) mode in the game settings or when starting a new game to take turns on the same Mac.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Does the game save my progress automatically?</div>
+        <div class="faq-answer">
+          Yes, your current game state and moves are automatically saved to your Mac's secure sandbox. You can quit the app at any time and resume right where you left off.
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="card">
+      <h2>🔒 Privacy Policy</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">Effective date: October 2026</p>
+      <p>
+        Your privacy is paramount. <strong>Long Backgammon</strong> is built strictly adhering to Apple's App Sandbox and privacy standards:
+      </p>
+      <ul>
+        <li><strong>No Personal Data Collection:</strong> We do not collect, request, transmit, or store any personal information, identifiers, or contacts.</li>
+        <li><strong>No Tracking & No Ads:</strong> The app does not track you across other apps or websites, does not use ad identifiers (IDFA), and contains no third-party tracking frameworks.</li>
+        <li><strong>Local Storage Only:</strong> Game settings, logs, and statistics are stored exclusively locally on your device within the sandboxed Application Support directory.</li>
+        <li><strong>No External Servers:</strong> The game functions 100% offline and makes no external network calls during gameplay.</li>
+      </ul>
+      <p>
+        If you have any questions regarding this Privacy Policy, please contact us at <a href="mailto:longbackgammon@icloud.com" style="color: var(--accent);">longbackgammon@icloud.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ansribas. All rights reserved. macOS and App Store are trademarks of Apple Inc.</p>
+  </footer>
+
+</body>
+</html>
